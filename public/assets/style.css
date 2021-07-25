@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+  background-color: #0c0c0c;
+}
+
+.title {
+  margin: 20px 0;
+  color: #7e7e7e;
+}
+
+.main {
+  border: 10px solid #dddddd;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 8px 16px;
+  color: #7e7e7e;
+  background-color: #ebebeb;
+}
+
+.name > span {
+  color: #bbb;
+}
+
+.name-input {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7e7e7e;
+  flex-grow: 1;
+  border: none;
+  margin: 0 10px;
+  outline: none;
+  background-color: #ebebeb;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  width: 350px;
+  height: 450px;
+  align-self: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.message-left,
+.message-right {
+  list-style: none;
+  max-width: 250px;
+  margin: 12px;
+  padding: 8px 12px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.message-left {
+  align-self: flex-start;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 0;
+  box-shadow: -2px 2px 4px #dcdcdc;
+}
+
+.message-right {
+  align-self: flex-end;
+  background-color: #2d2d2d;
+  border-radius: 20px 20px 0 20px;
+  box-shadow: -2px 2px 4px #dcdcdc;
+  color: #f6f6f6;
+}
+
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.feedback {
+  font-size: 14px;
+  font-style: italic;
+  padding: 0 16px 16px 16px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.message-input {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: #fff;
+}
+
+.btn-send {
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  padding: 0 20px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.v-divider{
+  height: 48px;
+  width: 2px;
+  background-color: #f6f6f6;
+}
+
+.total-client {
+  margin: 20px 0;
+  color: #7e7e7e;
+}
